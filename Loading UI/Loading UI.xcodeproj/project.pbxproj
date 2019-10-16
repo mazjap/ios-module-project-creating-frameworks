@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0E76F2B22357BCD8004D4306 /* Loading_UI.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E76F2B02357BCD8004D4306 /* Loading_UI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E76F2E32357BEFC004D4306 /* LoadingUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E76F2E22357BEFC004D4306 /* LoadingUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E76F2AD2357BCD8004D4306 /* Loading_UI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Loading_UI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E76F2B02357BCD8004D4306 /* Loading_UI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Loading_UI.h; sourceTree = "<group>"; };
 		0E76F2B12357BCD8004D4306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E76F2E22357BEFC004D4306 /* LoadingUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				0E76F2B02357BCD8004D4306 /* Loading_UI.h */,
 				0E76F2B12357BCD8004D4306 /* Info.plist */,
+				0E76F2E22357BEFC004D4306 /* LoadingUI.swift */,
 			);
 			path = "Loading UI";
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					0E76F2AC2357BCD8004D4306 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E76F2E32357BEFC004D4306 /* LoadingUI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		0E76F2B62357BCD8004D4306 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mazjap.Loading-UI";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,6 +290,7 @@
 		0E76F2B72357BCD8004D4306 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
